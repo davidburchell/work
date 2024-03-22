@@ -23,6 +23,10 @@ public class Game {
         int steps = input.nextInt();
 
         String [] mySolution = myTable.alternateSolution(steps);
-        System.out.println("done");
+
+        System.out.println();
+
+        String printable = myTable.buildString(mySolution);
+        System.out.println(printable);
     }
 }

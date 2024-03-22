@@ -72,6 +72,26 @@ public class Table {
         return toReturn;
     }
 
+    public String buildString(String [] wordList){
+        String toReturn = "";
+
+        for(int lcv = 0; lcv < wordList.length; lcv ++){
+            String toConsider = wordList[lcv];
+            if(toConsider == null){
+                toReturn = toReturn.substring(0, toReturn.length()-4);
+                break;
+            }
+            if(lcv + 1 < wordList.length){
+                toReturn += toConsider + " -> ";
+            }
+            else{
+                toReturn += toConsider;
+            }
+        }
+
+        return toReturn;
+    }
+
     public boolean isInDictionary(String w){
         return dictionary.contains(w);
     }
@@ -221,12 +241,6 @@ public class Table {
                 }
             }
         }
-
-        System.out.println("==========================");
-        for(int lcv2 = 0; lcv2 < indexOn; lcv2 ++){
-            System.out.println(wordList[lcv2]);
-        }
-        System.out.println("==========================");
 
         return wordList;
     }
