@@ -11,7 +11,6 @@ public class Table {
     private ArrayList<String> charactersUp;
     private ArrayList<String> charactersRemaining;
     private ArrayList<String> dictionary;
-
     private ArrayList<String> wordsToNotUse;
 
     public Table () throws IOException {
