@@ -22,7 +22,9 @@ layout: default
 > Looking for a tech role in the cities, or remote!
 
 ### &#x1F4DA; I like reading!
-> Favorite nonfiction book: The Great Escape. Favorite fiction book: Moby Dick
+> Favorite nonfiction book: The Great Escape
+> 
+> Favorite fiction book: The Return of the King
 
 ## projects
 ### games in java
