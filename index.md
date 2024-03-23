@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# :technologist: __*David Burchell*__
+# &technologist __*David Burchell*__
 # personal projects
 
 ## :open_book: [anagrams](games/anagrams/docs/anagrams_docs.md)
