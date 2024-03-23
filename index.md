@@ -33,3 +33,6 @@ layout: default
 >
 > ### &#x1F4DC; [letter boxed](games/letterBoxed/docs/letter_boxed_docs.md) 
 >> App to solve NYT's Letter Boxed
+>
+> ### &#x1F4A3; [minesweeper](games/minesweeper/docs/minesweeper_docs.md)
+>> Terminal version of classic Minesweeper
