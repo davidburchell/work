@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# &#x1F9D1;&#x200D;&#x1F4BB; __*David Burchell*__
+# &#x1F44B; __*David Burchell*__
 
 ## about
 ### &#x1F393; University of Minnesota - Twin Cities
