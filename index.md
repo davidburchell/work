@@ -1,7 +1,4 @@
----
-layout: default
----
-
+# <center> __*David Burchell*__ </center>
 # personal projects
 
 ## :open_book: [anagrams](games/anagrams/docs/anagrams_docs.md)
