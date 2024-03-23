@@ -36,6 +36,7 @@ layout: default
 >
 > ### &#x1F4A3; [minesweeper](games/minesweeper/docs/minesweeper_docs.md)
 >> Terminal version of classic Minesweeper
+
 ### web scraping
 ### api development
 ### utilities in c/c++
