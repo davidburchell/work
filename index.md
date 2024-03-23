@@ -25,7 +25,8 @@ layout: default
 > Favorite nonfiction book: The Great Escape. Favorite fiction book: Moby Dick
 
 ## projects
-### &#x1F4D6; [anagrams](games/anagrams/docs/anagrams_docs.md) 
-> App to solve a word game my friends and I play
-### &#x1F4DC; [letter boxed](games/letterBoxed/docs/letter_boxed_docs.md) 
-> App to solve NYT's Letter Boxed
+### games in java
+> ### &#x1F4D6; [anagrams](games/anagrams/docs/anagrams_docs.md) 
+>> App to solve a word game my friends and I play
+> ### &#x1F4DC; [letter boxed](games/letterBoxed/docs/letter_boxed_docs.md) 
+>> App to solve NYT's Letter Boxed
