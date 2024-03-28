@@ -1,7 +1,7 @@
 # &#x1F4D6; anagrams
 
 ## description
-Anagrams is a word game played with small, square tiles that each contain an individual English letter. While not an officially produced game, the game can be played using a set of [Banagrams](https://en.wikipedia.org/wiki/Bananagrams) tiles.
+Anagrams is a word game played with small, square tiles that each contain an individual English letter. While not an officially produced game, the game can be played using a set of [Bananagrams](https://en.wikipedia.org/wiki/Bananagrams) tiles.
 The game is played by putting all tiles face down and gradually turning the tiles over, pausing after each one to allow for word formation.
 
 Words (**>= 3 letters**) can be formed in the following ways:
@@ -47,7 +47,7 @@ private ArrayList<String> wordsToNotUse; // list of all words that have already 
 ```java
 Collections.sort(dictionary, Comparator.comparing(String::length));
 ```
-*charactersRemaining* is populated with letters following the Banagrams' letter distribution
+*charactersRemaining* is populated with letters following the Bananagrams' letter distribution
 ```java
 charactersRemaining = new ArrayList<>(Arrays.asList("A", "A", "A", ... "J", "J", "K", "K", ... "Z", "Z"));
 ```
