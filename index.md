@@ -26,7 +26,7 @@ layout: default
 > 
 > Favorite fiction book: The Return of the King
 >
-> *Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things. __Philipians 4:8__*
+> *Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things. __Philippians 4:8__*
 
 ## projects
 ### games in java
