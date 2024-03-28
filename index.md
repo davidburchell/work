@@ -9,14 +9,14 @@ layout: default
 
 ### &#x1F393; University of Minnesota - Twin Cities
 > Graduating in May 2024.
-> - Major in **Computer Science**
+> - major in **computer science**
 > - minor in business law
-> - minor in history.
+> - minor in history
 
 ### &#x1F4BC; Experience
 > - **Genetic Visions** Data Analysis Intern : June 22' to current
 > - **UMN-TC** Teaching Assistant : September 22' to current
-> - **Discover Financial** Software Engineer Intern : June 23' to August 23'
+> - **Discover Financial Services** Software Engineer Intern : June 23' to August 23'
 
 ### &#x1F3E1; Minneapolis, MN
 > Looking for a tech role in the cities, or remote!
@@ -25,6 +25,8 @@ layout: default
 > Favorite nonfiction book: The Great Escape
 > 
 > Favorite fiction book: The Return of the King
+>
+> *Finally, brothers, whatever is true, whatever is honorable, whatever is just, whatever is pure, whatever is lovely, whatever is commendable, if there is any excellence, if there is anything worthy of praise, think about these things. __Philipians 4:8__*
 
 ## projects
 ### games in java
