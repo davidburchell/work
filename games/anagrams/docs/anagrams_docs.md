@@ -32,16 +32,16 @@ We want to minimize computation time.
 
 a **Word** object has the following member variables
 ```java
-    private String name;
-    private int length;
+private String name;
+private int length;
 ```
 a **Table** object has the following member variables
 ```java
-    private ArrayList<Word> words; // formed words
-    private ArrayList<String> charactersUp; // flipped tiles
-    private ArrayList<String> charactersRemaining; // unflipped tiles
-    private ArrayList<String> dictionary; // list of acceptable English words
-    private ArrayList<String> wordsToNotUse; // list of all words that have already been formed
+private ArrayList<Word> words; // formed words
+private ArrayList<String> charactersUp; // flipped tiles
+private ArrayList<String> charactersRemaining; // unflipped tiles
+private ArrayList<String> dictionary; // list of acceptable English words
+private ArrayList<String> wordsToNotUse; // list of all words that have already been formed
 ```
 *dictionary* is populated with words from [this](../resources/dictionary.txt) Scrabble dictionary. It is then sorted **by length**
 ```java
@@ -51,6 +51,7 @@ Collections.sort(dictionary, Comparator.comparing(String::length));
 ```java
 charactersRemaining = new ArrayList<>(Arrays.asList("A", "A", "A", ... "J", "J", "K", "K", ... "Z", "Z"));
 ```
+
 
 ## result
 
