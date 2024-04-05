@@ -167,3 +167,4 @@ When making a word using an existing word, the problem is a bit trickier\
 ## source code
 ### [Game](../src/Game.java)
 ### [Table](../src/Table.java)
+### [Word](../src/Word.java)
