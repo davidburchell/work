@@ -161,7 +161,136 @@ public boolean isInDictionary(String w){
 }
 ```
 When making a word using an existing word, the problem is a bit trickier\
+Because of the clever way we took in *response*, however, we can tell if a proposed word is legal to make\
+*__isAnagram()__* accomplishes this
+```java
+public boolean isAnagram(String [] w1, String [] w2){
+    if(w1.length != w2.length){
+        return false;
+    }
 
+    Map<String, Integer> map1 = new HashMap<>();
+    Map<String, Integer> map2 = new HashMap<>();
+    String word = "";
+
+    for(int lcv = 0; lcv < w1.length; lcv ++){
+        word += w2[lcv];
+        if(map1.putIfAbsent(w1[lcv], 1) != null){
+            map1.put(w1[lcv], map1.get(w1[lcv]) + 1);
+        }
+        if(map2.putIfAbsent(w2[lcv], 1) != null){
+            map2.put(w2[lcv], map2.get(w2[lcv]) + 1);
+        }
+    }
+    for(int lcv = 0; lcv < w1.length; lcv ++){
+        if(map1.get(w1[lcv]) != map2.get(w1[lcv])){
+            return false;
+        }
+    }
+    return isInDictionary(word);
+}
+```
+So far, we have just implemented the game itself, there is no solving of a particular board state occuring\
+To effect this, *__buildAnagrams()__* finds all anagrams of a given word
+```java
+public ArrayList<String> buildAnagrams (Word original){
+    String myWord = original.getName();
+    String [] myWordList = myWord.split("");
+
+    ArrayList<String> toReturn = new ArrayList<>();
+
+    for(int lcv = 0; lcv < dictionary.size(); lcv ++){
+        String workingOn = dictionary.get(lcv);
+        if(workingOn.length() > myWord.length()){
+            break;
+        }
+        if(workingOn.length() < myWord.length() - 1){
+            lcv += 1000;
+        }
+        if(myWord.length() == workingOn.length()){
+            if(!wordsToNotUse.contains(dictionary.get(lcv)) && isAnagram(myWordList, workingOn.split(""))){
+                toReturn.add(workingOn);
+            }
+        }
+    }
+    
+    return toReturn;
+}
+```
+This method is called directly from **Game**, depending on if the user decides to solve\
+For clarity, the following code will take all flipped tiles and all formed words and find:
+ - **all** possible anagrams
+ - **all** possible 1 away words
+ - **all** possible 2 away words
+where "# away word" is a word makeable from existing word plus that # of flipped tiles 
+```java
+ArrayList<String> characters = myTable.getFlippedTiles();
+ArrayList<Word> myWordList = myTable.getWords();
+
+Set<String> noAway = new HashSet<>();
+Set<String> oneAway = new HashSet<>();
+Set<String> twoAway = new HashSet<>();
+
+ArrayList<String> possible = new ArrayList<>();
+
+// word + 1 flipped letter
+for(int lcv = 0; lcv < myWordList.size(); lcv ++){
+    possible = myTable.buildAnagrams(new Word(myWordList.get(lcv).getName()));
+    for(int lcv2 = 0; lcv2 < possible.size(); lcv2 ++){
+        if(!possible.get(lcv2).equals(myWordList.get(lcv).getName())){
+            String tan = "\033[38;2;163;152;109m" + possible.get(lcv2) + "\033[0m";
+            noAway.add(tan);
+        }
+
+    }
+    possible.clear();
+
+    for(int lcv2 = 0; lcv2 < characters.size(); lcv2 ++){
+        String newPossibility = myWordList.get(lcv).getName() + characters.get(lcv2);
+
+        possible = myTable.buildAnagrams(new Word(newPossibility));
+        for(int lcv3 = 0; lcv3 < possible.size(); lcv3 ++){
+            String bronze = "\033[38;5;136m" + possible.get(lcv3) + "\033[0m";
+            oneAway.add(bronze);
+        }
+        possible.clear();
+
+        // word + 2 flipped letters
+        for(int lcv3 = 0; lcv3 < characters.size(); lcv3 ++){
+            if(lcv3 != lcv2){
+                String nextPossibility = newPossibility + characters.get(lcv3);
+                possible = myTable.buildAnagrams(new Word(nextPossibility));
+                for(int lcv4 = 0; lcv4 < possible.size(); lcv4 ++){
+                    String gold = "\033[38;2;212;179;13m" + possible.get(lcv4) + "\033[0m";
+                    twoAway.add(gold);
+                }
+                possible.clear();
+
+                // word + 3 flipped letters
+//                                for(int lcv4 = 0; lcv4 < characters.size(); lcv4 ++){
+//                                    if(lcv4 != lcv3 && lcv4 != lcv2){
+//                                        String newestPossibility = nextPossibility + characters.get(lcv4);
+//                                        possible = myTable.buildAnagrams(new Word(newestPossibility));
+//                                        for(int lcv5 = 0; lcv5 < possible.size(); lcv5 ++){
+//                                            anagrams.add(possible.get(lcv5));
+//                                        }
+//                                        possible.clear();
+//                                    }
+//                                }
+            }
+        }
+    }
+    int totalAway = oneAway.size() + twoAway.size();
+    String front = myWordList.get(lcv) + "(" + totalAway + ") : ";
+    System.out.format("%-11s %s\n", front, noAway);
+    System.out.format("%-11s %s\n", " ", oneAway);
+    System.out.format("%-11s %s\n", " ", twoAway);
+    System.out.println();
+    noAway.clear();
+    oneAway.clear();
+    twoAway.clear();
+}
+```
 ## result
 
 ## source code
