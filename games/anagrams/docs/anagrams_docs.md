@@ -233,7 +233,7 @@ Set<String> twoAway = new HashSet<>();
 
 ArrayList<String> possible = new ArrayList<>();
 
-// word + 1 flipped letter
+// strict anagram
 for(int lcv = 0; lcv < myWordList.size(); lcv ++){
     possible = myTable.buildAnagrams(new Word(myWordList.get(lcv).getName()));
     for(int lcv2 = 0; lcv2 < possible.size(); lcv2 ++){
@@ -241,10 +241,10 @@ for(int lcv = 0; lcv < myWordList.size(); lcv ++){
             String tan = "\033[38;2;163;152;109m" + possible.get(lcv2) + "\033[0m";
             noAway.add(tan);
         }
-
     }
     possible.clear();
 
+    // word + 1 flipped letter
     for(int lcv2 = 0; lcv2 < characters.size(); lcv2 ++){
         String newPossibility = myWordList.get(lcv).getName() + characters.get(lcv2);
 
