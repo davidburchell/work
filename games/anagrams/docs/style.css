@@ -1,8 +1,8 @@
 img[src$="#right"] {
   display: block;
-  border-radius: 2em;
+  border-radius: 1em;
   float: left;
   margin-left: 1em;
   margin-bottom: 2em;
-  box-shadow: 10px 10px 5px black;
+  box-shadow: 8px 8px 6px lightblue;
 }
