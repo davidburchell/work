@@ -1,0 +1,8 @@
+img[src$="#right"] {
+  display: block;
+  border-radius: 2em;
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  box-shadow: 10px 10px 5px black;
+}
