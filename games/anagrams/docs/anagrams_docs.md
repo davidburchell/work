@@ -224,7 +224,7 @@ For clarity, the following code will take all flipped tiles and all formed words
  - **all** possible anagrams
  - **all** possible 1 away words
  - **all** possible 2 away words\
-where "# away word" is a word makeable from existing word plus that # of flipped tiles\
+where "# away word" is a word makeable from existing word plus that # of flipped tiles
 
 ```java
 ArrayList<String> characters = myTable.getFlippedTiles();
@@ -297,14 +297,14 @@ for(int lcv = 0; lcv < myWordList.size(); lcv ++){
 
 ## result
 Starting the program, no tiles flipped, no words formed, prompting user for input\
-![flipping tiles](images/opening_anagrams.png#right)
+![flipping tiles](images/opening_anagrams.png#right)\
 Populating the board by flipping tiles randomly\
-![flipping tiles](images/flipped_anagrams.png#right)
+![flipping tiles](images/flipped_anagrams.png#right)\
 Forming initial words from flipped letters, flipping more lettings\
-![forming words](images/words_anagrams.png#right)
+![forming words](images/words_anagrams.png#right)\
 Solving the board by building every possible strict, 1 away, 2 away, and combined word anagram\
-![solving board 1](images/total1_anagrams.png#right)
-![solving board 2](images/total2_anagrams.png#right)
+![solving board 1](images/total1_anagrams.png#right)\
+![solving board 2](images/total2_anagrams.png#right)\
 
 ## source code
 ### [Game](../src/Game.java)
