@@ -5,8 +5,9 @@
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-start;
 }
 .text {
   margin-bottom: 20px; /* Adjust as needed */
+  text-align: left;
 }
