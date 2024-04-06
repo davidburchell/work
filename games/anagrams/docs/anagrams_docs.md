@@ -311,7 +311,7 @@ for(int lcv = 0; lcv < myWordList.size(); lcv ++){
     <img src="images/flipped_anagrams.png" alt="flipping tiles">
   </div>
   <div class="text">
-    <p>Forming initial words from flipped letters, flipping more letters</p>
+    <p>Forming initial words from flipped letters, then flipping more letters</p>
   </div>
   <div class="image">
     <img src="images/words_anagrams.png" alt="forming words">
