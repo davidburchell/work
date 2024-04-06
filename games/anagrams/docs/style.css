@@ -3,7 +3,13 @@ img[src$="#right"] {
   flex-direction: column;
   align-items: left;
   border-radius: 1em
-  margin-left: 1em;
-  margin-bottom: 2em;
   box-shadow: 8px 8px 6px CadetBlue;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text {
+  margin-bottom: 20px; /* Adjust as needed */
 }
