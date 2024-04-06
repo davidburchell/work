@@ -224,7 +224,8 @@ For clarity, the following code will take all flipped tiles and all formed words
  - **all** possible anagrams
  - **all** possible 1 away words
  - **all** possible 2 away words\
-where "# away word" is a word makeable from existing word plus that # of flipped tiles 
+where "# away word" is a word makeable from existing word plus that # of flipped tiles\
+
 ```java
 ArrayList<String> characters = myTable.getFlippedTiles();
 ArrayList<Word> myWordList = myTable.getWords();
