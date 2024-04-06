@@ -1,4 +1,4 @@
-<link href="style.css" rel="stylesheet">
+<link href=style.css type="text/css" rel="stylesheet">
 
 # &#x1F4D6; anagrams
 
