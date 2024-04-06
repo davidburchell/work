@@ -293,6 +293,7 @@ for(int lcv = 0; lcv < myWordList.size(); lcv ++){
     twoAway.clear();
 }
 ```
+
 ## result
 Starting the program, no tiles flipped, no words formed, prompting user for input\
 ![flipping tiles](images/opening_anagrams.png#right)
