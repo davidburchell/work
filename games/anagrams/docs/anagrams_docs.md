@@ -307,8 +307,8 @@ for(int lcv = 0; lcv < myWordList.size(); lcv ++){
   <div class="text">
     <p>Populating the board by flipping tiles randomly</p>
   </div>
-  <div>
-    <img class="image" src="images/flipped_anagrams.png" alt="flipping tiles">
+  <div class="image">
+    <img src="images/flipped_anagrams.png" alt="flipping tiles">
   </div>
   <div class="text">
     <p>Forming initial words from flipped letters, flipping more lettings</p>
