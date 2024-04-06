@@ -1,6 +1,5 @@
 .image img {
-  border-radius: 2em;
-  border: 5px solid black;
+  border-radius: 1.5em;
   box-shadow: 8px 8px 6px CadetBlue;
   margin-bottom: 20px;
 }
@@ -10,6 +9,6 @@
   align-items: flex-start;
 }
 .text {
-  margin-bottom: 10px; /* Adjust as needed */
+  margin-bottom: 5px; /* Adjust as needed */
   text-align: left;
 }
