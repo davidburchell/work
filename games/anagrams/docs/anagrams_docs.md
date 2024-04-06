@@ -301,8 +301,8 @@ for(int lcv = 0; lcv < myWordList.size(); lcv ++){
   <div class="text">
     <p>Starting the program, no tiles flipped, no words formed, prompting user for input</p>
   </div>
-  <div>
-    <img class="image" src="images/opening_anagrams.png" alt="initial prompt">
+  <div class="image">
+    <img src="images/opening_anagrams.png" alt="initial prompt">
   </div>
   <div class="text">
     <p>Populating the board by flipping tiles randomly</p>
