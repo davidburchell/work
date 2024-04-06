@@ -1,6 +1,7 @@
 .image img {
-  border-radius: 10px;
+  border-radius: 2em;
   box-shadow: 8px 8px 6px CadetBlue;
+  margin-bottom: 20px;
 }
 .container {
   display: flex;
