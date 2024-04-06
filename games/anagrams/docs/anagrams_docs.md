@@ -296,15 +296,21 @@ for(int lcv = 0; lcv < myWordList.size(); lcv ++){
 ```
 
 ## result
-Starting the program, no tiles flipped, no words formed, prompting user for input\
-![flipping tiles](images/opening_anagrams.png#right)
-Populating the board by flipping tiles randomly\
-![flipping tiles](images/flipped_anagrams.png#right)
-Forming initial words from flipped letters, flipping more lettings\
-![forming words](images/words_anagrams.png#right)
-Solving the board by building every possible strict, 1 away, 2 away, and combined word anagram\
-![solving board 1](images/total1_anagrams.png#right)
-![solving board 2](images/total2_anagrams.png#right)
+
+<div class="container">
+  <div class="text">
+    <p>Starting the program, no tiles flipped, no words formed, prompting user for input</p>
+  </div>
+  <div class="image">
+    <img src="images/opening_anagrams.png" alt="initial prompt">
+  </div>
+  <div class="text">
+    <p>Populating the board by flipping tiles randomly</p>
+  </div>
+  <div class="image">
+    <img src="images/flipped_anagrams.png" alt="flipping tiles">
+  </div>
+</div>
 
 ## source code
 ### [Game](../src/Game.java)
