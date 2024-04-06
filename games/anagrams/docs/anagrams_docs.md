@@ -322,7 +322,7 @@ for(int lcv = 0; lcv < myWordList.size(); lcv ++){
   <div class="image">
     <img src="images/total1_anagrams.png" alt="solving board part 1">
   </div>
-  <div>
+  <div class="image">
     <img src="images/total2_anagrams.png" alt="solving board part 2">
   </div>
 </div>
